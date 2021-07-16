@@ -1,0 +1,28 @@
+.habilidades {
+    padding: $separacion 0;
+
+.habilidades-descrip p{
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.habilidades-imagenes {
+    padding: 0;
+    list-style: none;
+    margin-top: $separacion;
+    @include grid(3, $separacion);
+    @include tablet {
+        @include grid(6, $separacion / 2);
+    }
+    @include desktop {
+        @include grid(9, $separacion / 2);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

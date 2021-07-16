@@ -1,0 +1,58 @@
+.sobre-mi {
+    padding: $separacion 0;
+
+    @include tablet {
+        @include grid(2, $separacion);
+    }
+    
+    .imagen{
+        text-align: center;
+        img{
+            border: 2px solid $azulclaro;
+            border-radius: 50%;
+            max-width: 80%;
+        }
+    } 
+    .sobremi-boton{
+        background-color: #0e76a8;
+        color: $blanco;
+        padding: 1rem 3rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        text-align: center;
+        border:none;
+        width: 80%;
+        @include tablet {
+            font-size: 2rem;
+            width:initial;
+
+        }
+
+        &:hover {
+            background-color: lighten($linkein, 10);
+        }
+
+    }
+}
+
+.contenido-sobremi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        color: $azulclaro;
+
+    }
+
+    .texto {
+        text-align: center;
+        line-height: 1.2;
+    }
+}

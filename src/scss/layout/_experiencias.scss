@@ -1,0 +1,54 @@
+.experiencias {
+    background-color: lighten($grisc,50);
+    padding: $separacion 0;
+    h2 {
+        text-align: center;
+        color: $azul;
+    }
+    h3{
+        color: $griso;
+    }
+
+
+    .contenedor-experiencias {
+        margin-top: $separacion / 2;
+
+    }
+
+
+}
+.experiencia{
+    padding-top: 2rem;
+    border-bottom: 1px solid $griso;
+    &:last-of-type {
+        border: none;
+        .esperiencia-boton{
+            margin-bottom: 0;
+        }
+     }
+     &:first-of-type{
+        padding-top: 0;
+     }
+
+}
+
+.esperiencia-boton{
+    display: inline-block;
+    background-color: $azul;
+    color: $blanco;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    @include tablet {
+        font-size: 2rem;
+
+    }
+
+    &:hover {
+        background-color: lighten($azul, 10);
+    }
+    margin-bottom: 2rem;
+
+}
