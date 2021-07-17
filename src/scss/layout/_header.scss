@@ -92,7 +92,7 @@
     }
     
     ul ul {
-      display:none;
+      // display:none;
       position:absolute;
       top:100%;
       left: -25%;
@@ -113,6 +113,13 @@
 
     img{
       width: 4rem;
+    }
+    .displayblock{
+      display: block;
+
+    }
+    .displaynone{
+      display: none;
     }
 
 }

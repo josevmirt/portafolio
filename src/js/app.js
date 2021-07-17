@@ -24,7 +24,6 @@ function scrollNav() {
     enlaces.forEach(function (enlace) {
         enlace.addEventListener('click', function (e) {
             e.preventDefault();
-            list.style.display = 'none';
             const seccion = document.querySelector(e.target.attributes.href.value);
             seccion.scrollIntoView({
                 behavior: 'smooth'
@@ -39,7 +38,7 @@ function scrollNavseg() {
     enlaces.forEach(function (enlace) {
         enlace.addEventListener('click', function (e) {
             e.preventDefault();
-            list.style.display = 'none';
+            list.classList.replace('displayblock', 'displaynone');
             const seccion = document.querySelector(e.target.attributes.href.value);
             seccion.scrollIntoView({
                 behavior: 'smooth'
@@ -54,13 +53,11 @@ const list = document.querySelector('#listaseg');
 
 img.addEventListener('click', function () {
 
-    if (list.style.display == 'block') {
-        list.style.display = 'none';
+    if (list.classList.contains('displaynone')) {
+        list.classList.replace('displaynone', 'displayblock');
     } else {
-        list.style.display = 'block';
+        list.classList.replace('displayblock', 'displaynone');
     }
-
-
 })
 
 const btncontac = document.querySelector('.contenido-video a');
