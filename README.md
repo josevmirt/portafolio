@@ -22,4 +22,4 @@ gulp
 * [Git](https://git-scm.com/) - Control de Versiones
 
 
-###   Míralo aquí - [Portafolio José Villegas](https://likegallery.netlify.app/)
+###   Míralo aquí - [Portafolio José Villegas](https://portafoliojosevillegas.netlify.app/)
